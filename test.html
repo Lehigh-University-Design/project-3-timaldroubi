@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Layout</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .image {
+        flex: 1;
+        margin-right: 20px;
+    }
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .content {
+        flex: 2;
+    }
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+        .image,
+        .content {
+            margin-right: 0;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="image">
+        <img src="../project-3-timaldroubi/images/nausicaa-mask.png" alt="Image">
+    </div>
+    <div class="content">
+        <h2>Header</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut lacus nec mauris suscipit aliquet. Integer quis posuere mauris. In ut justo felis. Sed et felis id augue ullamcorper gravida ut non enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </div>
+</div>
+
+</body>
+</html>

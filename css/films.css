@@ -1,0 +1,313 @@
+/* Parallax */
+
+#parallax {
+    position: relative;
+    display: block;
+    background-color: #2D612E;
+    z-index: -10; /* This will place the parallax behind other content */
+}
+
+
+#layer1{
+    background: url(../images/layer1-background-01-01.jpg);
+}
+
+#layer2{
+    background: url(../images/layer2-background-01.png);
+}
+#layer3{
+    background: url(../images/layer3-background-01-01.png);
+}
+#layer4{
+    background: url(../images/layer4-background-01-01.png);
+}
+#parallax div{
+
+    background-size: cover !important;
+    position: fixed;
+    top: 0;
+    background-position: center !important;
+    transform: translateY(0px);
+    height: 1000px;
+    width: 100%;
+    
+}
+
+#kiki-parallax {
+    position: relative;
+    display: block;
+    background-color: #2D612E;
+   height: 1000px;
+}
+#kiki-parralax div{
+    background-size: cover !important;
+    position: fixed;
+    top: 0;
+    background-position: center !important;
+    transform: translateY(0px);
+    height: 1000px;
+    width: 100%;
+}
+
+#layer1-kiki{
+    background: url(../images/kiki-layer1-01.png);
+}
+
+#layer2-kiki{
+    background: url(../images/kiki-layer2-01.png);
+}
+#layer3-kiki{
+    background: url(../images/kiki-layer3.png);
+}
+#layer4-kiki{
+    background: url(../images/kiki-layer4.png);
+}
+
+
+
+/* movies */
+
+.title {
+    font-family: 'pinkerston';
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.intro-container{
+    z-index: 5;
+    position: relative;
+    margin-top: 990px;
+    padding: 10%;
+    padding-top: 100px;
+    display: flex;
+    background-color: #0f3815;
+   
+    
+    img {
+        max-width: 400px;
+    }
+
+    p {
+        color: white;
+    }
+
+    
+}
+
+.nausicaa-container{
+    
+    display: flex;
+    background-color: #2e7cc9;
+    padding: 10%;
+    
+    img {
+        max-width: 400px;
+    }
+
+    p {
+        color: white;
+        
+    }
+
+    
+}
+
+/* .seperator{
+    z-index: 10;
+    height: 50px;
+    background-color: #4EA05A;
+   
+} */
+
+#shita{
+  
+    position: absolute;
+    margin-top: -400px;
+    /* margin-top: -400px; */
+    width: 50%;
+    opacity: 50%;
+    /* transform: translateY(140%);
+    transition: all 4s ease-out; */
+}
+
+.castle-in-the-sky-container{
+    padding: 10%;
+    z-index: -100;
+    background-color: var(--background-color);
+    height: 30vh;
+    .castle-img {
+        max-width: 400px;
+    }
+
+    p {
+        margin-top: -3%;
+        color: white;
+        z-index: -10;
+        
+        
+    }
+
+    .castle-content {
+        display: flex;
+        
+    }
+
+}
+
+.fireflies-container{
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--dark-color);
+    background-image: url('../images/fireflies-full-01.png');
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    
+    img{
+        z-index: 6;
+        width: 50%;
+    }
+
+    p{
+        
+        z-index: 6;
+        color: white;
+        width: 50%;
+    }
+    .title{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+}
+
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.sky-background{
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+}
+.sky-container{
+    height: 1100px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/kiki-01.png');
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    margin: 0;
+
+    p {
+        color: var(--dark-color);
+        margin-top: 0;
+        padding-left: 5%;
+        padding-right: 20%;
+    }
+    
+}
+
+.divider {
+    height: 200px;
+    background-color: #2e7cc9;
+}
+
+.totoro-container{
+    margin: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #2e7cc9;
+    background-image: url("../images/totoro-background.png");
+    height: 100vh;
+    background-size: cover;
+    /* background-color: var(--light-color); */
+    p {
+        margin: 0;
+        color: white;
+    }
+}
+
+/* .totoro-container.in-view{
+    animation: fadeIn 5s;
+} */
+
+.mononoke-parallex{
+    padding-top: 0;
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    p {
+        color: white;
+    }
+}
+
+.haku{
+    width: 60%;
+}
+
+.spirited-container{
+    display: flex;
+    p {
+        color: white;
+    }
+}
+
+.spirited-content{
+    opacity:0%;
+    margin-top: 10%;
+    margin-right: 8%;
+    margin-left: -8%;
+}
+
+.spirited-content.in-view{
+      animation: fadeIn 5s ease forwards;
+}
+
+#shita.in-view{
+    animation: fall 5s ease forwards
+}
+
+.fade.in-view{
+    animation: fadeIn 3s ease forwards;
+}
+
+.title.in-view{
+    animation: fadeIn 3s ease forwards;
+}
+@keyframes fall{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(400px); /* Adjust the value to set how far it moves down */
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.right{
+    text-align: right;
+}
+  
+.intro{
+    text-align: center;
+}
+
+.nausicaa-img{
+    width: 20%;
+    height: auto;
+}

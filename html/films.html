@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Project 3</title>
+        <link rel="stylesheet" href="../css/films.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <script src="../javascript/parallax.js"></script>
+        <script src="../javascript/scrollAnimation.js"></script>
+        
+        <style>
+            
+            .title {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            .container {
+                /* max-width: 1200px; */
+                margin: 0 auto;
+                padding: 20px;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-top: 5%;
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+            }
+            .image {
+                flex: 1;
+                margin-right: 20px;
+            }
+            .image img {
+                max-width: 100%;
+                height: auto;
+            }
+            .content {
+                flex: 2;
+                color: white;
+                /* .right{
+                    padding-right: 20px;
+                } */
+            }
+            @media (max-width: 768px) {
+                .container {
+                    flex-direction: column;
+                }
+                .image,
+                .content {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                    width: 100%;
+                }
+            }
+
+            #nausicaa-image{
+                width: 70%;
+                padding: 10%;
+                padding-top: 25%;
+            }
+
+            #nausicaa-container{
+                background-color: #2e7cc9;
+            }
+
+            #shita-image{
+                max-width: 150%;
+            }
+
+            #fireflies-container{
+                background-image: url('../images/fireflies-full-01.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: calc(0.32 * 100vw);
+                background-color: var(--dark-color);
+            }
+
+            #totoro-container{
+                background-color: #2e7cc9
+            }
+
+            #porco-container {
+                background-color: #1a5ebd;
+            }
+
+            #porco-image {
+                width: 70%;
+                padding: 10%;
+            }
+
+            .mononoke-parallax {
+                position: relative;   
+                background-color: #2D612E;
+               
+            }
+
+
+            #mononoke-layer1{
+                background: url(../images/layer1-background-01-01.jpg);
+            }
+
+            #mononoke-layer2{
+                background: url(../images/layer2-background-01.png);
+            }
+
+            #mononoke-layer3{
+                background: url(../images/layer3-background-01-01.png);
+            }
+
+            #mononoke-layer4{
+                background: url(../images/layer4-background-01-01.png);
+            }
+
+            .mononoke-parallax div{
+                
+                height: 1000px;
+                background-size: cover;
+                position: absolute;
+                top: 0; 
+                left: 0;
+                width: 100%;
+                will-change: transform; /* Optional performance optimization */
+            
+            }
+
+            #mononoke-container{
+                background-image: url('../images/mononokeNoParallax-01.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: calc(0.8 * 100vw);
+
+                .title{
+                    margin-top: 0;
+                }
+
+                .text {
+                    background-color: var(--dark-color);
+                    padding: 10px;
+                    padding-top: 0;
+                }
+            }
+
+            #kiki-container{
+                background-image: url('../images/kiki-01.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: calc(0.5 * 100vw);
+
+                .text {
+                    background-color: var(--background-color);
+                    padding: 10px;
+                    padding-top: 0;
+                }
+                
+            }
+
+            #haku-image{
+                max-width: 150%;
+            }
+
+            #castle-container{
+                background-color: #439cd6;
+            }
+
+            #howl-img{
+                max-width: 160%;
+            }
+
+            #heron-container{
+                background-image: url('../images/heron-01.png');
+                height: calc(0.5 * 100vw);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #wind-container{
+                background-color: #1a5ebd;
+            }
+
+            #howls-container{
+                background-color: var(--dark-color);
+            }
+
+            
+
+        </style>
+    </head>
+
+    <body>
+        <header class="header">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="index.html">Biography</a></li>
+                <li><a href="films.html" class="selected">Films</a></li>
+                <li><a href="themes.html">Themes</a></li>
+                <li><a href="quotes.html">Other</a></li>
+            </ul>
+        </header>
+
+        <div class="section1" id="parallax">
+            <div id="layer1"></div>
+            <div id="layer2"></div>
+            <div id="layer3"></div>
+            <div id="layer4"></div>
+            
+            
+        </div>
+
+        <div class="section2">
+            <div class="intro-container">
+                <div>
+                    <!-- <p class="title intro">Movies Timeline</p> -->
+                    <p class="intro">Throughout his career, Miyazaki has crafted a diverse array of cinematic masterpieces that have captivated audiences worldwide. This page serves as a tribute to his extraordinary body of work, with a chronological timeline of all of the films he has directed throughout his career, each showcasing his renowned imagination and artistry. </p>
+                
+                </div>
+            </div>
+
+        </div>
+            
+           
+        <div class="container" id="nausicaa-container">
+            
+            <div class="content">
+                <p class="title">Nausicaa of the Valley of the Wind ( 1984 )</p>
+                <p>Miyazaki's directorial debut showcases his signature blend of epic adventure and ecological themes, as the titular princess embarks on a quest to bring harmony to a ravaged land. Nausicaa transports viewers to a post-apocalyptic world where humanity struggles for survival amidst toxic jungles and warring kingdoms. </p>
+            </div>
+
+            <div class="image">
+                <img id="nausicaa-image" src="../images/nausicaa-mask.png" alt="Image">
+            </div>
+        </div>
+
+        <div class="container" id="castle-container">
+            <div class="image">
+                <img id="shita-image" src="../images/shita-background.png" alt="Image">
+            </div>
+            <div class="content">
+                <p class="title">Castle in the sky ( 1986 )</p>
+                <p>In "Castle in the Sky," Miyazaki invites audiences on a high-flying adventure filled with wonder and magic. As two young protagonists unravel the mysteries surrounding a legendary floating city, Miyazaki weaves a tale of friendship, courage, and the enduring power of dreams.</p>
+            </div>
+        </div>
+
+        <div class="container" id="fireflies-container">
+            
+            <div class="content">
+                <p class="title">Grave of the fireflies ( 1988 )</p>
+                <p>"Grave of the Fireflies" stands as a hauntingly poignant portrayal of the human cost of war. Directed by Isao Takahata but often associated with Miyazaki due to their collaboration at Studio Ghibli, this heartbreaking film follows two siblings' struggle for survival amidst the devastation of World War II-era Japan.</p>
+            </div>
+
+            <div class="image">
+                <img>
+            </div>
+        </div>
+
+        <div class="container" id="totoro-container">
+            <div class="image">
+                <img id="totoro-image" src="../images/totoro-gif.gif" alt="Image">
+            </div>
+            <div class="content">
+                <p class="title">My Neighbor Totoro ( 1988 )</p>
+                <p>In this heartwarming tale, two sisters, Satsuki and Mei, befriend the whimsical forest spirit Totoro while adjusting to their new rural life. "My Neighbor Totoro" captivates audiences with its gentle charm and celebrates the magic found in everyday moments.</p>
+            </div>
+        </div>
+
+        <div class="container" id="kiki-container">
+            
+            <div class="content">
+                <div class="text">
+                    <p class="title">Kiki's Delivery Service ( 1989 )</p>
+                    <p>Kiki is a young witch-in-training. Throughout this film she navigates the challenges of independence and self-discovery in a bustling seaside town. With its enchanting atmosphere and endearing characters, "Kiki's Delivery Service" is a delightful coming-of-age story brimming with Miyazaki's trademark whimsy.</p>    
+                </div>
+             </div>
+
+            <div class="image">
+                <img>
+            </div>
+        </div>
+
+        <div class="container" id="porco-container">
+            <div class="image">
+                <img id="porco-image" src="../images/porco-01.png" alt="Image">
+            </div>
+            <div class="content">
+                <p class="title">Porco Rosso ( 1992 )</p>
+                <p>Set in the Adriatic Sea between the two World Wars, "Porco Rosso" follows the adventures of an ace pilot cursed with the appearance of a pig. As he battles air pirates and fascist agents, Porco Rosso confronts his past and finds redemption amidst the clouds.</p>
+            </div>
+        </div>
+
+        <div class="container" id="mononoke-container">
+            
+            <div class="content">
+                <div class="text">
+                    <p class="title">Princess Mononoke ( 1997 )</p>
+                    <p>In this epic fantasy, the young warrior Ashitaka becomes embroiled in a conflict between the industrialized Iron Town and the spirits of the forest. "Princess Mononoke" explores themes of environmentalism and the consequences of human greed with breathtaking animation and a morally complex narrative.</p>    
+                </div>
+            
+            </div>
+
+            <div class="image">
+                <img>
+            </div>
+        </div>
+
+        <!-- <div class="mononoke-container">
+            <div class="mononoke-parallax">
+                <div id="mononoke-layer1"></div>
+                <div id="mononoke-layer2"></div>
+                <div id="mononoke-layer3"></div>
+                <div id="mononoke-layer4"></div>
+                
+                
+            </div>
+
+        </div> -->
+   
+
+        <div class="container" id="spirited-container">
+            <div class="image">
+                <img id="haku-image" src="../images/hakuGif.gif" alt="Image">
+            </div>
+            <div class="content">
+                <p class="title">Spirited Away ( 2001 )</p>
+                <p>Winner of the Academy Award for Best Animated Feature, "Spirited Away" follows the journey of Chihiro, a young girl trapped in a mysterious spirit world. As she works in a bathhouse for spirits to save her parents, Chihiro encounters a myriad of fantastical creatures and discovers her inner strength.</p>
+            </div>
+        </div>
+
+        <div class="container" id="howls-container">
+            
+            <div class="content">
+                <p class="title">Howl's Moving Castle ( 2004 )</p>
+                <p>Adapted from Diana Wynne Jones's novel, "Howl's Moving Castle" is a spellbinding tale of love and magic. Join Sophie, a young woman cursed with old age, as she embarks on a quest to break the spell with the help of the enigmatic wizard Howl and his eccentric companions.</p>
+            </div>
+
+            <div class="image">
+                <img id="howl-img" src="../images/howl.png" alt="Image">
+            </div>
+        </div>
+
+        <div class="container" id="ponyo-container">
+            <div class="image">
+                <img src="../images/ponyo.png" alt="Image">
+            </div>
+            <div class="content">
+                <p class="title">Ponyo ( 2008 )</p>
+                <p>Inspired by Hans Christian Andersen's "The Little Mermaid," "Ponyo" tells the story of a fish-girl who dreams of becoming human after befriending a young boy named Sosuke. With its stunning hand-drawn animation and enchanting soundtrack, "Ponyo" captures the wonder and joy of childhood.</p>
+            </div>
+        </div>
+
+        <div class="container" id="wind-container">
+            
+            <div class="content">
+                <p class="title">The Wind Rises ( 2013 )</p>
+                <p>In his final feature film before retirement, Miyazaki crafts a poignant biographical drama inspired by the life of Jiro Horikoshi, the designer of the Mitsubishi A6M Zero fighter plane. "The Wind Rises" explores themes of creativity, love, and the cost of pursuing one's dreams against the backdrop of pre-World War II Japan.</p>
+            </div>
+
+            <div class="image">
+                <img id="wind-img" src="../images/wind.png">
+            </div>
+        </div>
+
+        <div class="container" id="heron-container">
+            <div class="image">
+                <img>
+            </div>
+            <div class="content">
+                <p class="title">The Boy and the Heron</p>
+                <p>Miyazaki returns from returned from retirement to create the film "The Boy and the Heron. This film, steeped in mystique and wonder, transports viewers into a realm where the ordinary meets the extraordinary. The young protagonist moves to a new house with a mysterious heron. With Miyazaki's signature blend of imagination, heart, and whimsy, the story follows the adventure and personal growth of the young protagonist after moving to a new house with a mysterious heron.</p>
+            </div>
+        </div>
+        
+        
+    </body>
+
+</html>

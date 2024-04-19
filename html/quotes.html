@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Project 3</title>
+        <link rel="stylesheet" href="../css/quotes.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <script>
+            function hover(description, by) {
+                console.log(description);
+                document.getElementById('content').innerHTML = description;
+                document.getElementById('by').innerHTML = by
+            }
+        </script>
+    
+    </head>
+
+    <body>
+
+        <header class="header">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="index.html">Biography</a></li>
+                <li><a href="films.html" >Films</a></li>
+                <li><a href="themes.html">Themes</a></li>
+                <li><a href="quotes.html" class="selected">Quotes</a></li>
+            </ul>
+
+            
+        </header>
+
+        <div class="container">
+            <div class="top-container">
+                
+                <div class="box small-box">
+                    <img onmouseover="hover('Ponyo loves ham!', '-Ponyo')" class="box-img hover" src="../images/ponyo-ham.jpg_large" alt="quote">
+                </div>
+                <div class="box small-box">
+                    <img onmouseover="hover('May all your bacon burn', '-Calcifer')" class="box-img hover" src="../images/calcifer.webp" alt="calcifer">
+                </div>
+                <div class="box small-box">
+                    <img onmouseover="hover('Trees and people used to be good friends', '-Tatsuo Kusakabe')" class="box-img hover" src="../images/tatsuo.jpg" alt="tatsuo">
+                </div>
+                <div class="box small-box">
+                    <img onmouseover="hover('Good pirates always listen to their mom', '-The Dola Gang')" class="box-img hover" src="../images/dola-gang.jpg" alt="pirates">
+                    
+                </div>
+                <div class="box small-box">
+                    <img onmouseover="hover('Whenever someone creates something with their entire heart, then that creation is given a soul', '-Hayao Miyazaki')" class="box-img hover" src="../images/miyazaki-quote.jpeg" alt="quote">
+                </div>
+            </div>
+            
+            <div class="box larger-box">
+
+                <p id="content">
+                   "Whenever someone creates something with their entire heart, then that creation is given a soul"
+                </p>
+                <p id="by">
+                    -Hayao Miyazaki
+                </p>
+
+                <!-- <p class="box-text">
+                    "Ponyo loves ham!"
+                </p>
+
+                <p class="box-text hidden">
+                    "May all your bacon burn"
+                </p>
+
+                <p class="box-text hidden">
+                    "Trees and people used to be good friends"
+                </p>
+
+                <p class="box-text hidden">
+                    "Good pirates always listen to their mom"
+                </p> -->
+
+            </div>
+        </div>
+    
+    </body>
+
+</html>
